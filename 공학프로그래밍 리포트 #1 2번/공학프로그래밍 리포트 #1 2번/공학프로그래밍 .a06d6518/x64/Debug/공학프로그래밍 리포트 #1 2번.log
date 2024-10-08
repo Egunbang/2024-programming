@@ -1,0 +1,7 @@
+﻿  소스.cpp
+C:\Users\bird7\source\repos\공학프로그래밍 리포트 (7,13): warning C4476: 'scanf_s' : 서식 지정자에 알 수 없는 형식 필드 문자 '.'이(가) 있습니다.
+C:\Users\bird7\source\repos\공학프로그래밍 리포트 (7,21): warning C4474: 'scanf_s' : 서식 문자열에 전달된 인수가 너무 많습니다.
+      C:\Users\bird7\source\repos\공학프로그래밍 리포트 (7,21):
+      자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  
+  공학프로그래밍 리포트 #1 2번.vcxproj -> C:\Users\bird7\source\repos\공학프로그래밍 리포트 #1 2번\공학프로그래밍 리포트 #1 2번\x64\Debug\공학프로그래밍 리포트 #1 2번.exe
