@@ -26,6 +26,9 @@ int main(void)
      case'/':
          printf("%d %c %d = %d\n", a, giho, b, a / b);
          break;
+
+     default:
+         printf("계산할 수 없음");
     }
    
     return 0;
