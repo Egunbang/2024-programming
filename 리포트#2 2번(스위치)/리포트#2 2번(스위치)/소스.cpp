@@ -4,13 +4,13 @@ int main(void)
 {
     int num1, num2;
 
-    // 사용자로부터 두 개의 정수 입력받기
+    // 두 개의 정수 입력받기
     printf("첫 번째 정수를 입력하시오: ");
     scanf_s("%d", &num1);
     printf("두 번째 정수를 입력하시오: ");
     scanf_s("%d", &num2);
 
-    // 배수 관계 판별
+    // 배수인지 판별하기
     switch (num2 == 0 ? -1 : num1 % num2) 
     {
     case 0:
