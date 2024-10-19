@@ -15,7 +15,7 @@ int main(void)
         printf("%d는 짝수입니다.\n", number);
         break;
     
-    case 1:
+    default:
         printf("%d는 홀수입니다.\n", number);
         break;
     }
