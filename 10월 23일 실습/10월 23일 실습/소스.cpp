@@ -3,7 +3,7 @@
 int main(void)
 {
 	int num;
-	printf("원하는 단수를 입력하시오");
+	printf("원하는 단수를 입력하시오:");
 	scanf_s("%d", &num);
 	
 	switch (num)
@@ -21,6 +21,15 @@ int main(void)
 			printf("%d * %d = %d\n", num, i,num*i);
 		 }
 		break;
+	 case 10:
+		 for (int num = 2; num <= 9; num++) 
+		 {
+			 printf("%d단:\n", num);
+			 for (int i = 1; i <= 9; i++) 
+			 {
+				 printf("%d x %d =%d\n", num, i, num * i);
+			 }
+		  }
 	 default:
 		printf("2에서 9사이의 숫자를 입력하시오");
 		break;
