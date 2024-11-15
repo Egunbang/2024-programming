@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "리포트#3 2번 총합, 분산, 표준편차를 계산하는 프로그램", "리포트#3 2번 총합, 분산, 표준편차를 계산하는 프로그램\리포트#3 2번 총합, 분산, 표준편차를 계산하는 프로그램.vcxproj", "{1EA2C2B2-EA47-457A-957A-C1288B9E7183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Debug|x64.ActiveCfg = Debug|x64
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Debug|x64.Build.0 = Debug|x64
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Debug|x86.ActiveCfg = Debug|Win32
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Debug|x86.Build.0 = Debug|Win32
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Release|x64.ActiveCfg = Release|x64
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Release|x64.Build.0 = Release|x64
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Release|x86.ActiveCfg = Release|Win32
+		{1EA2C2B2-EA47-457A-957A-C1288B9E7183}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FA877F5-FEFE-414A-A5C6-57088C2AD001}
+	EndGlobalSection
+EndGlobal
