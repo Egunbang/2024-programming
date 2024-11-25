@@ -1,0 +1,5 @@
+﻿  소스.cpp
+C:\Users\ansys17\Documents\GitHub\2024-programming\11월 4인 실습\11월 4인 실습\소스.cpp(13,1): warning C4005: 'PLAYER': 매크로 재정의
+C:\Users\ansys17\Documents\GitHub\2024-programming\11월 4인 실습\11월 4인 실습\소스.cpp(12): message : 'PLAYER'의 이전 정의를 참조하십시오.
+C:\Users\ansys17\Documents\GitHub\2024-programming\11월 4인 실습\11월 4인 실습\소스.cpp(64,23): error C2374: 'nComRps': 재정의. 여러 번 초기화했습니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\11월 4인 실습\11월 4인 실습\소스.cpp(62): message : 'nComRps' 선언을 참조하십시오.

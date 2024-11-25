@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\Users\ansys17\Documents\GitHub\2024-programming\11월 6일 실습 자료\11월 6일 실습 자료\소스.cpp(86,12): warning C4477: 'printf' : 서식 문자열 '%.2i'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double'입니다.
+  11월 6일 실습 자료.vcxproj -> C:\Users\ansys17\Documents\GitHub\2024-programming\11월 6일 실습 자료\x64\Debug\11월 6일 실습 자료.exe
