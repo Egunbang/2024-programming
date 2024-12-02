@@ -1,0 +1,16 @@
+﻿  소스.cpp
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(6,29): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(13,30): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(15,11): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(15,11): warning C4313: 'printf': 서식 문자열의 '%u'이(가) double *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(22,30): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(41,30): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(43,11): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(43,11): warning C4313: 'printf': 서식 문자열의 '%u'이(가) double *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(44,11): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(44,11): warning C4313: 'printf': 서식 문자열의 '%u'이(가) double *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(45,11): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(45,11): warning C4313: 'printf': 서식 문자열의 '%u'이(가) double *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(46,11): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
+C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\12월 2일 실습\소스.cpp(46,11): warning C4313: 'printf': 서식 문자열의 '%u'이(가) double *' 형식의 인수 2과(와) 충돌합니다.
+  12월 2일 실습.vcxproj -> C:\Users\ansys17\Documents\GitHub\2024-programming\12월 2일 실습\x64\Debug\12월 2일 실습.exe
