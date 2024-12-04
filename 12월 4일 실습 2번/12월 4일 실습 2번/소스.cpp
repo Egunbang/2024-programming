@@ -1,57 +1,71 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdlib.h> 
+#include <time.h>   
 
-// 배열 크기 정의하기
-#define ARRAY_SIZE 10
-
-// 값의 범위 정의하기
-#define MIN -100.0
-#define MAX 100.0
-
-// 랜덤하게 배열을 생성하는 함수 만들기
-void GenerateArray(float arr[], int size) 
+// 배열의 역순을 계산하는 함수
+void CalcInverseArray(double* arr, double* inverseArr, int size)
 {
-    srand(time(0)); // 난수 생성을 위한 시드 초기화하기
-    for (int i = 0; i < size; i++) 
+    // 배열을 역순으로 저장
+    for (int i = 0; i < size; i++)
     {
-        arr[i] = MIN + (rand() / (float)RAND_MAX) * (MAX - MIN);
+        inverseArr[i] = arr[size - 1 - i];
     }
 }
 
-// 배열을 역순으로 변경하는 함수 만들기
-void CalcInverseArray(float arr[], int size) 
+// 배열을 출력하는 함수
+void PrintArray(const double* arr, int size, const char* msg)
 {
-    for (int i = 0; i < size / 2; i++)
+    printf("%s: ", msg);
+    for (int i = 0; i < size; i++)
     {
-        float temp = arr[i];
-        arr[i] = arr[size - 1 - i];
-        arr[size - 1 - i] = temp;
-    }
-}
-
-// 배열을 출력하는 함수 만들기
-void PrintArray(float arr[], int size) 
-{
-    for (int i = 0; i < size; i++) 
-    {
-        printf("%.3lf ", arr[i]);
+        printf("%.2f ", arr[i]); //소수점 둘째자리까지만 출력
     }
     printf("\n");
 }
 
-// 메인 함수
-int main(void) 
+int main(void)
 {
-    float arr[ARRAY_SIZE];
+    const int SIZE = 10; //배열의 크기
+    double arr[SIZE];    //원본 배열
+    double inverseArr[SIZE]; //역순 배열
+    int choice; //정수 실수 선택
 
-    GenerateArray(arr, ARRAY_SIZE);
-    printf("랜덤 배열: ");
-    PrintArray(arr, ARRAY_SIZE);
+    //정수 또는 실수를 선택
+    printf("랜덤으로 생성할 수를 선택-(1: 정수, 2: 실수): ");
+    scanf_s("%d", &choice);
 
-    CalcInverseArray(arr, ARRAY_SIZE);
-    printf("역순 배열: ");
-    PrintArray(arr, ARRAY_SIZE);
+    // 랜덤 시드 초기화
+    srand((unsigned int)time(NULL));
+
+    //선택에 따라 정수 또는 실수 배열 생성
+    if (choice == 1)
+    {
+        //정수형 배열 생성 (-100 ~ +100)
+        for (int i = 0; i < SIZE; i++)
+        {
+            arr[i] = (double)(rand() % 201 - 100);
+        }
+    }
+    else if (choice == 2) {
+        //실수형 배열 생성 (-100.0 ~ +100.0)
+        for (int i = 0; i < SIZE; i++)
+        {
+            arr[i] = (double)rand() / RAND_MAX * 200.0 - 100.0;
+        }
+    }
+    else {
+        printf("잘못된 접근.\n");
+        return 1; //예외처리
+    }
+
+    //생성된 배열 출력
+    PrintArray(arr, SIZE, "생성된 배열");
+
+    //역순 배열 계산
+    CalcInverseArray(arr, inverseArr, SIZE);
+
+    //역순 배열 출력
+    PrintArray(inverseArr, SIZE, "역순 배열");
 
     return 0;
 }

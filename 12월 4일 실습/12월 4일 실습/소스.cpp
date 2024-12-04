@@ -2,38 +2,37 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 10
+#define SIZE 10//배열 크기는 10
 
-// 랜덤한 실수 배열 생성하기
-void GenerateArray(float array[], int size) 
+//배열의 상태를 출력하는 함수
+void PrintArray(double* array, int size)
 {
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < size; i++)
     {
-        array[i] = ((float)rand() / RAND_MAX) * 200.0f - 100.0f; // -100.0 ~ +100.0 범위의 값 생성하기
-    }
-}
-
-// 배열 출력하기
-void PrintArray(float array[], int size) 
-{
-    for (int i = 0; i < size; i++) 
-    {
-        printf("%6.2f ", array[i]);
+        printf("%.2f ", array[i]);//소수점 둘째자리까지만 출력
     }
     printf("\n");
 }
 
-// 배열 정렬 함수 (옵션에 따라 오름차순/내림차순 선택) 이게 되네ㅐ
-void CalcSortArray(float array[], int size, int ascending) 
+//배열을 정렬
+void CalcSortArray(double* array, int size, int ascending)
 {
-    for (int i = 0; i < size - 1; i++) 
+    //버블 정렬을 사용하여 배열 정렬
+    for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
         {
-            if ((ascending && array[j] > array[j + 1]) || (!ascending && array[j] < array[j + 1]))
+            //오름차순
+            if (ascending && array[j] > array[j + 1])
             {
-                // 값 교환하기
-                float temp = array[j];
+                double temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+            }
+            //내림차순
+            else if (!ascending && array[j] < array[j + 1])
+            {
+                double temp = array[j];
                 array[j] = array[j + 1];
                 array[j + 1] = temp;
             }
@@ -41,31 +40,63 @@ void CalcSortArray(float array[], int size, int ascending)
     }
 }
 
-int main() 
+int main(void)
 {
-    float array[SIZE];
+    double array[SIZE];
+    int choiceType, choiceSort;
 
-    // 랜덤 시드 설정하기
-    srand((unsigned int)time(NULL));
+    srand(time(NULL));
 
-    // 배열 생성하기
-    GenerateArray(array, SIZE);
+    //실수, 정수 선택
+    printf("랜덤으로 생성할 수를 선택-(1: 정수, 2: 실수): ");
+    scanf_s("%d", &choiceType);
 
-    // 생성된 배열 출력하기
-    printf("랜덤 생성된 배열:\n");
+    //배열 생성
+    for (int i = 0; i < SIZE; i++)
+    {
+        if (choiceType == 1)
+        {
+            //정수 생성 (0 ~ 100)
+            array[i] = rand() % 101;
+        }
+        else if (choiceType == 2)
+        {
+            //실수 생성 (-100.0 ~ +100.0)
+            array[i] = ((double)rand() / RAND_MAX) * 200.0 - 100.0;
+        }
+        else
+        {
+            printf("잘못된 접근.\n");
+            return 1;
+        }
+    }
+
+    //랜덤 생성된 배열 출력
+    printf("랜덤 생성된 배열: ");
     PrintArray(array, SIZE);
 
-    // 배열 정렬 (오름차순)
-    CalcSortArray(array, SIZE, 1);
-    printf("\n오름차순 정렬된 배열:\n");
-    PrintArray(array, SIZE);
-    
-    // 배열 재생성하기
-    GenerateArray(array, SIZE);
+    //정렬 방식 선택
+    printf("정렬 방식을 선택하세요 (1: 오름차순, 2: 내림차순): ");
+    scanf_s("%d", &choiceSort);
 
-    // 배열 정렬 (내림차순)
-    CalcSortArray(array, SIZE, 0);
-    printf("\n내림차순 정렬된 배열:\n");
+    //선택에 따라 정렬
+    if (choiceSort == 1)
+    {
+        CalcSortArray(array, SIZE, 1); //오름차순 정렬
+        printf("오름차순 정렬된 배열: ");
+    }
+    else if (choiceSort == 2)
+    {
+        CalcSortArray(array, SIZE, 0); //내림차순 정렬
+        printf("내림차순 정렬된 배열: ");
+    }
+    else
+    {
+        printf("잘못된 접근.\n");//예외 처리
+        return 1;
+    }
+
+    // 정렬된 배열 출력
     PrintArray(array, SIZE);
 
     return 0;
