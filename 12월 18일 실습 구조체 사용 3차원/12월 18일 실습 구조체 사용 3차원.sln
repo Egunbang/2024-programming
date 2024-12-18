@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12월 18일 실습 구조체 사용 3차원", "12월 18일 실습 구조체 사용 3차원\12월 18일 실습 구조체 사용 3차원.vcxproj", "{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Debug|x64.ActiveCfg = Debug|x64
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Debug|x64.Build.0 = Debug|x64
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Debug|x86.ActiveCfg = Debug|Win32
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Debug|x86.Build.0 = Debug|Win32
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Release|x64.ActiveCfg = Release|x64
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Release|x64.Build.0 = Release|x64
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Release|x86.ActiveCfg = Release|Win32
+		{53DE40BE-3F2B-4A82-9094-4637DA5ED5E3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AC62709-5925-4B29-8892-0181F4FB4FB7}
+	EndGlobalSection
+EndGlobal
