@@ -38,7 +38,7 @@ int findMemberById(int id);
 void loadData(); // 파일에서 데이터 로드
 void saveData(); // 파일에 데이터 저장
 
-int main() {
+int main(void) {
     loadData(); // 프로그램 시작 시 파일에서 데이터 로드
 
     int choice;
